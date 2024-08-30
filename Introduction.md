@@ -209,7 +209,89 @@ https://www.microsoft.com/en-in/security/business/identity-access/microsoft-entr
 
 
 
-- AZure Cosmos DB - no sql database
+- Azure Cosmos DB - no sql database 
+
+
+
+# SHARED RESPONSIBILITY MODEL
+
+- the security tasks are divided between cloud provider and user
+- division is based on the cloud model
+- Availability Zone : the cloud providor checks whether the application is running in that particular zone or not , if one zone experiences outage , then other zones handle .
+- region can contain multiple availability zones.
+
+
+- Resource Group : group of related resources together, so that they can be managed as single entity 
+
+- services are subcategories of resource
+
+- example VM is a service of windows machine 
+![alt text](image-7.png)
+
+
+
+# DEVOPS
+- development + opearations => deploying code 
+- main branch -> flawless code is pushed 
+- the code is deployed from main branch 
+- github is a source code managmenent tool
+- dev -> test -> preprod -> main(prod) (flow of branches)
+- pull request is raised when we want to push from one branch to another
+- ITSM -> IT service manager ensures the deploymnent from one layer to another (from development layer to testing layer to production )
+- three categories (deployment Pipeline)
+1. SCM
+2. Staging
+3. Deployment
+
+- continous integration / continous deployment : CI where developers regularly merge their code changes into a central repository 
+
+- triggers are stimulations that triggers deployment , automatically starts a pipeline run
+
+
+# ARM
+ - Azure Resource Manager is the deployment and management service for Azure. It provides a management layer that enables you to create, update, and delete resources in your Azure account. You use management features, like access control, locks, and tags, to secure and organize your resources after deployment. 
+ - When you send a request through any of the Azure APIs, tools, or SDKs, Resource Manager receives the request. It authenticates and authorizes the request before forwarding it to the appropriate Azure service.
+
+
+
+ - resource groups is similar to branches in github 
+
+ - developer will put his code in a VM at a particular location in that resource group and devOps engineer will take the code from these locations and start the pipeline.
+
+
+
+ - we can create resource of a service.
+ Eg: we can create a virtual machine service of compute resource
+ Eg: we can create cosmos DB of database resource
+
+
+ - DevOps communicates with ARM and Arm communicates with contianers
+ - arm file is created automatically when we deploy an application
+
+ - resource manager applies rules to the resource groups
+
+ - ARM is neither a resource nor a service
+
+
+
+ # FACTORS TO CONSIDER WHEN CHOOSING REGIONS
+
+ 1. Latency : delay when we are trying to use a service. Minimize latency for users by selecting a region closer to their location.
+ 2. Data Sovereignty : by selecting regions that meet standards
+ 3. Pricing : compare pricing across regions 
+ 4. Avalability Zones : utilizie AZs for high availability by deploying your applications across physically separated data centers within a region.
+
+
+ - Strategies for Optimizing Region Standards
+ 1. Geo-Replication : replicate data across multiple regions to ensure availability and disaster recovery
+ 2. Traffic Routing : Azure Traffic manager to distribute traffic to the optimal region based on performance and availability
+ 3. Azure Content Delivery Network(CDN) : Cache content closer to end users for faster delivery, improving perforamnce and reducing latency. 
+
+
+ 
+
+
+
 
 
 
