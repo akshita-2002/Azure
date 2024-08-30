@@ -116,6 +116,100 @@
 
 
 
+### AZURE SECURITY 
+
+1. Identity Management : Azure Active Directory is used for user authentication (when we login) and authorization(permissions after login)
+2. Data Encryption : encrypt data at rest and in transit using Azure Key Vault
+3. Threat Protection : Azure Security Center for monitoring and responding to security threats
+
+
+- Azure Monitoring - Log analytics(Collect and analyze logs of azure) , Metrics(monitor metrics of azure resources and applications) and Alerts(sets alerts for critical events )
+
+
+
+- Active Directory : 
+https://www.microsoft.com/en-in/security/business/identity-access/microsoft-entra-id
+
+
+
+
+
+## AZURE WEB JOBS
+
+- Monitoring is done using azure web jobs 
+- when we are using a service , events are triggered
+- Web jobs are background tasks that run in azure 
+- web jobs are triggered by events , schedules or on demand
+
+- Benifits
+1. improved efficiency
+2. reduced costs
+3. flexibility
+4. increased scalability
+
+![alt text](image-3.png)
+
+
+- Types 
+1. Continous WebJobs : runs continously as long as they are active, ideal for monitoring
+2. Triggered WebJobs : Activatd by specific events such as new files in storage acccount or msgs in queue
+3. Scheduled WebJobs : executed according to a defined schedule, suitable for tasks requiring regular execution.
+
+
+
+- Deploying WebJobs in Azure
+1. Create a WebJob
+2. Configure Settings
+3. Publish to Azure
+
+
+
+
+# CONTAINERS
+
+- includes everything needed to run an application:code,libraries,system,tools and configuration settings.
+
+- benefits
+![alt text](image-4.png)
+
+
+- Docker : makes the projects independent of platform , to run our applications irrespective of operating system 
+
+- docker is a container engine
+
+- docker engine : image building, container creation , container management
+
+- docker hub : cloud for sharing and storing docker images
+
+- docker compose : manages dependencies and relationships 
+
+- Docker Architecture 
+![alt text](image-5.png)
+
+
+
+- Commands for Virtual Machine
+![alt text](image-6.png)
+
+
+- webapp-sql.json => azure resource manager file  
+
+- Building Docker Images
+1. From - specifies the base iamge to use for build
+2. Copy - 
+3. Run -
+4. CMD - sets the default command to run when the container starts
+
+
+- docker run - creates and runs containers
+- docker ps - List all running containers
+- docker stop
+- docker start
+- docker rm - remove a container
+
+
+
+- AZure Cosmos DB - no sql database
 
 
 
@@ -161,5 +255,7 @@
 
 
 
-++++++++++++++++++6+666
-++
+
+
+
+
