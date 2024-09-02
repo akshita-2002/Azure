@@ -252,7 +252,7 @@ https://www.microsoft.com/en-in/security/business/identity-access/microsoft-entr
  - Azure Resource Manager is the deployment and management service for Azure. It provides a management layer that enables you to create, update, and delete resources in your Azure account. You use management features, like access control, locks, and tags, to secure and organize your resources after deployment. 
  - When you send a request through any of the Azure APIs, tools, or SDKs, Resource Manager receives the request. It authenticates and authorizes the request before forwarding it to the appropriate Azure service.
 
-
+![alt text](image-11.png)
 
  - resource groups is similar to branches in github 
 
@@ -286,6 +286,52 @@ https://www.microsoft.com/en-in/security/business/identity-access/microsoft-entr
  1. Geo-Replication : replicate data across multiple regions to ensure availability and disaster recovery
  2. Traffic Routing : Azure Traffic manager to distribute traffic to the optimal region based on performance and availability
  3. Azure Content Delivery Network(CDN) : Cache content closer to end users for faster delivery, improving perforamnce and reducing latency. 
+
+
+
+
+
+ # MICROSERVICES: Creating small small instances and deploy individually
+
+1. Independent Deployment : microservices can be deployed and updated independently 
+2. Technology Diversity : diff services can use different technologies, allowing teams to choose the best tool for the job 
+3. Improved Scalability : microservices allow scaling individual services based on demand
+4. Resilience and Fault isolation :failures in one service are less likely to impact other services, improving application resilience(failing of one service shouldnt effect other services).
+
+
+- Challenges:
+1. Increased complexity : managing a distributed system with many services can be more complex 
+2. Distributed Debugging : tracing requests and errors across multiple services can be challenging.
+3. Data Consistency : the data be should be same across multiple services. Maintaining consistency across multiple services requires carefull design and implementation.
+
+![alt text](image-8.png)
+
+
+
+## DEVOPS Resources
+- Application Insights : to monitor live web application. Must be created before deployment 
+
+- App Configuration : the featurs used to create app in azure environmnet, we can create a app 
+
+
+
+# SOLID PRINCIPLES : Design Princles to check  monolithic or microservices application
+
+- Single Responsibility : Each software module or a class should have one and only reason to change. A class should have one and only one reason to change, meaning that a class should have only one job.
+
+- Liskov Substitution :  You should be able to use any derived class instead of a base class without modification. THe actual functionality is substituted with multiple functionalities. Services replace resources.
+Before liskov and AFTER liskov
+
+![alt text](image-9.png)
+
+- Open/Closed : a software class or module should be open for extension but closed for modification, when we inherit a class we inherit functionalities from parent to child, the parent class should not be modified as it effects the child class . All services are part of a resource , instead of changing the resource we change the service.
+
+- Dependency Inversion : High classes should not depend on low level classes instead both should depend upon abstraction(data hiding) . should depend only the feature we are using (Eg: if we are using a VM , we should not depend on the resource).Reduces the load .
+
+![alt text](image-10.png)
+
+- Interface Segregation : Client should not be forced to use an interface which is not relevant to it or clients shouldn’t be forced to depend on methods they do not use.
+
 
 
  
