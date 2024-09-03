@@ -334,7 +334,19 @@ Before liskov and AFTER liskov
 
 
 
- 
+# AZURE DevOps
+- Backlog : tasks that are yet to come in upcoming days and we are not working on it.
+- Sprints are automatically created in backlog.
+- first tasks are assigned to everyone, if the tasks are more than the memebers, then the members can choose a task after completing the assigned task.
+- if the task is not completed in given time, the task is pushed to backlog
+
+- repository :
+![alt text](image-12.png)
+  -  developer doesnt have acess to other branches except dev 
+  - we create a project under a organization in azure DevOps
+  - and repositories are created in a project
+  - branches are created in a repos 
+  - branch policy - who handles the things , whether azure should handle it or members of a project
 
 
 
