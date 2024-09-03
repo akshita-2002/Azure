@@ -346,8 +346,33 @@ Before liskov and AFTER liskov
   - we create a project under a organization in azure DevOps
   - and repositories are created in a project
   - branches are created in a repos 
-  - branch policy - who handles the things , whether azure should handle it or members of a project
+  - branch policy - who handles the things , whether azure should handle it or members of a project 
 
+
+
+  ## KURBERNETES
+
+  - contianer orchestration system
+  - automates deployment , scaling and management of containerized applications
+  - K8S , till kubernetes was introduced there was no open source system, we can connect 8 or multiple of 8 containers 
+  - framework for running distributed systems 
+  - groups containers into logical units called pods.
+  - pods are managed across cluster of nodes (multiple pods)
+  ![alt text](image-15.png)
+- Architecture: 
+ 1. Master Node - acess only given to admin(example login module is placed in master node)
+ 2. Worker Node - dependent on master node, to manage and run pods.
+ 3. Cluster - consists of multiple worker nodes managed by the master node 
+
+ ![alt text](image-13.png)
+
+ 4. Kubelet - runs oneach worker node and manages the podsrunning on that node
+
+ 5. Etcd - is a distributed key value store used to  store configuration and state of cluster 
+
+ ![alt text](image-14.png)
+
+ - control plane is used to control the nodes, the developers and devops can change the master node depending on the application.
 
 
 
