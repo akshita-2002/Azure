@@ -422,6 +422,55 @@ https://learn.microsoft.com/en-us/azure/aks/tutorial-kubernetes-deploy-cluster?t
 - developer interacts with master node, users or list of users can only access application through worker nodes. the job of worker nodes to use the features of master node and make accessible to users.
 ![alt text](image-19.png) 
 
+- kubernetes will recognize one micro service at a time, for one microservice it will allocate a pod, application will run in the pod.
+
+- Docker plays the role to identify containers, for containerization. Suppose we have 5 microservices of java and 5 of .NET , instead of creating 10 pods , docker will help to containize the java microservices together and .NET microservices together.
+
+- Container Runtime is docker to identify the conatiners
+
+- Network Proxy-> application runs on different addresses, handled by network proxy
+
+- Kubelet -> process that runs in background when kubernetes run.
+
+- Master node is also called control plane node.
+
+- communication between master and worker is bidirectional because for the collaboration of worker nodes 
+
+
+![alt text](image-20.png)
+
+- Replica set is used when two worker nodes are dependent on each other and needs to run together. for example fronend and backend are dependent on each other but each pod is for each microservice so they must be deployed separately but at the same time.
+
+![alt text](image-21.png)
+- Namespace -> name given to location of application in K8S
+
+- Microservice is deployed in three namespces 
+
+
+
+
+
+# REPLICA SET vs DAEMON SET
+
+- daemon set -> a copy of single pod is deployed across multiple nodes, exactly one replica of each node 
+- replica set -> ensures specific replicas of pods are running 
+
+
+
+# AKS ARCHITECTURE
+
+![alt text](image-22.png)
+- ingress => internally processing of service
+![alt text](image-23.png)
+- to use all the features at same time , ingress helps
+- the services inside the cluster , ingress controls the routing of external requests to kubernetes
+- suppose we have a same application running on web app, mobile app and a 3rd party app, and the application from different sources is accessing different services , the routing is handled by ingress.
+- collection of routing rules, which particular application will acess which service at a particular point of time.
+
+
+
+
+
 
  
 
