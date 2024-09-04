@@ -366,13 +366,64 @@ Before liskov and AFTER liskov
 
  ![alt text](image-13.png)
 
- 4. Kubelet - runs oneach worker node and manages the podsrunning on that node
+ 4. Kubelet - runs on each worker node and manages the pods running on that node
 
  5. Etcd - is a distributed key value store used to  store configuration and state of cluster 
 
  ![alt text](image-14.png)
 
  - control plane is used to control the nodes, the developers and devops can change the master node depending on the application.
+
+- to create a resource group using cloud shell
+```w
+ az group create --name myapp-rg --location eastus
+```
+- to create a azure container registry - all containers are mapped using key value pair
+```
+az acr create --resource-group myapp-rg --name mycontainerregistry --sku Basic
+```
+
+![alt text](image-16.png)
+
+- to create a kubernetes cluster 
+https://learn.microsoft.com/en-us/azure/aks/tutorial-kubernetes-deploy-cluster?tabs=azure-cli
+
+
+- Kubernetes Services 
+
+1. Service Discovery : 
+2. Load Balancing
+3. Abstraction
+4. Acess control 
+
+![alt text](image-17.png)
+
+
+
+- Kubernetes Networking
+![alt text](image-18.png)
+
+1. Service Discovery : K8s try to search for the service 
+2. Network Policy : set of rules that allows a user to acess a network, some of the pods are accesible in a network while others are not in a same network.Helps to control the communication between pods 
+3. Ingress Controllers : manage acess to services within cluster. Routing to internal features
+
+
+
+
+# WHAT TO CONSIDER FOR DEVOPS IN NETWORKING
+
+- quality of network deploymentand update speeds : how much time it took for deploymnet
+- Network visibility : which network is accesible by which network
+- Network segregation : even though all are in same network , so that they can be accessed separately
+
+
+
+
+- developer interacts with master node, users or list of users can only access application through worker nodes. the job of worker nodes to use the features of master node and make accessible to users.
+![alt text](image-19.png) 
+
+
+ 
 
 
 
