@@ -442,7 +442,8 @@ https://learn.microsoft.com/en-us/azure/aks/tutorial-kubernetes-deploy-cluster?t
 - Replica set is used when two worker nodes are dependent on each other and needs to run together. for example fronend and backend are dependent on each other but each pod is for each microservice so they must be deployed separately but at the same time.
 
 ![alt text](image-21.png)
-- Namespace -> name given to location of application in K8S
+![alt text](image-29.png)
+- Namespace -> name given to location of application in K8S, inside the pod categorization , to separate dev,pod and test
 
 - Microservice is deployed in three namespces 
 
@@ -466,6 +467,90 @@ https://learn.microsoft.com/en-us/azure/aks/tutorial-kubernetes-deploy-cluster?t
 - the services inside the cluster , ingress controls the routing of external requests to kubernetes
 - suppose we have a same application running on web app, mobile app and a 3rd party app, and the application from different sources is accessing different services , the routing is handled by ingress.
 - collection of routing rules, which particular application will acess which service at a particular point of time.
+
+
+
+
+![alt text](image-24.png)
+
+
+### INGRESS
+
+![alt text](image-25.png)
+
+- deploymnets happen using private IP
+- accessibility happen using public IP
+- Load balancer , the number of IP addresses the number of users are using, divides the requests into micro services , using azure kubernetes service 
+- load balancer breakdowns the requests to services 
+- ingress controller performes ingestion 
+- ingestion => we are succesfully able to locate the pod depending on the request. 
+![alt text](image-28.png)
+
+
+### KUBERNETES CONFIGMAPS AND SECRETS
+![alt text](image-27.png)
+
+
+
+### SCALING AND AUTOSCALING
+
+1. Manual Scaling : adjust the number of replicas of a deployment manually
+2. Horizontal Pod Autoscaler(HPA) : automatically scale based on a CPU, memory or custom metrics
+3. Vertical Pod Autoscaler (VPA) : automatically adjust resource requests and limits
+
+
+
+### KUBERNETES ROLLING UPDATES AND ROLLBACKS
+![alt text](image-30.png)
+
+
+
+
+### KUBERNETES MONITORING AND LOGGING
+
+- we have features like grafana and promethus for data feaching 
+- kubana is also a tool
+-
+![alt text](image-31.png)
+
+
+### SECURITY
+
+- Master node handles authentication and authorization
+![alt text](image-32.png)
+
+
+
+
+# AZURE DEVOPS FEATURES
+![alt text](image-26.png)
+
+- epic are high level tasks
+
+- epic and features are for production
+
+- stories and tasks are for developers
+
+- stories are non technical explanation of tasks
+
+
+
+
+# DOCKER
+
+![alt text](image-33.png)  => on premises
+
+- docker in VM is handled by hyvervisor in cloud
+
+![alt text](image-34.png) => cloud
+
+- hypervisor 
+
+
+
+
+
+
 
 
 
