@@ -567,7 +567,39 @@ https://learn.microsoft.com/en-us/azure/aks/tutorial-kubernetes-deploy-cluster?t
 - difference b/w contianer and vm
 ![alt text](image-38.png)
 container has hypervisor whereas container is docker
-- containers are isolated from each other , portable means they can run on any platform that supports docker
+- containers are isolated from each other , portable means they can run on any platform that supports docker 
+
+## DOCKER IMAGES
+![alt text](image-39.png)
+- a copy of actual version
+- shallow copy , changes made wont effect actual copy
+- blueprints for containers
+- simple representation of dependencies
+![alt text](image-41.png)
+- containers run using images
+
+## DOCKER NETWORKING
+
+- Network isolation
+- network connectivity
+- network sharing
+- network security 
+
+## DOCKER VOLUMES
+![alt text](image-42.png)
+![alt text](image-43.png)
+- multiple containers sharing multiple files
+
+
+## DOCKER COMPOSE
+![alt text](image-44.png)
+- docker compose helps to reduce work by deploying images on all containers 
+![alt text](image-45.png)
+docker compose reads the yml file and creates images 
+- tool to run multi container applications
+
+
+
 
 
 
