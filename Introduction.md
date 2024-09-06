@@ -544,7 +544,30 @@ https://learn.microsoft.com/en-us/azure/aks/tutorial-kubernetes-deploy-cluster?t
 
 ![alt text](image-34.png) => cloud
 
-- hypervisor 
+- kubernetes , hypervisor shares the same docker instance to kubernetes pods 
+
+
+## HYPERVISOR TYPES
+
+![alt text](image-35.png)
+
+- cloud role is more in type 1
+- hypervisor detects the os and implements the docker 
+- in type 2 the responsibilty is 50-50 
+- based on the host OS , the hypervisor implements docker in VMs
+
+
+![alt text](image-36.png)
+
+
+## DOCKER CONTAINERS
+
+- docker is a paltform that provides virtualization 
+- container is a package that runs on docker
+- difference b/w contianer and vm
+![alt text](image-38.png)
+container has hypervisor whereas container is docker
+- containers are isolated from each other , portable means they can run on any platform that supports docker
 
 
 
