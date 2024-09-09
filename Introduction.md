@@ -599,7 +599,19 @@ docker compose reads the yml file and creates images
 - tool to run multi container applications 
 
 
+## DOCKER ARCHITECTURE 
 
+![alt text](image-46.png)
+- docker daemon : the docker instance that is running,instance that runs everytime . Responsibile for executing all docker tasks.
+- registry : registration of key value pair for running images , docker hub. Depending on docker deamon it will fetch the image from docker hub.
+Contains all the images and absed on the request docker pulls the image from registry
+![alt text](image-47.png)
+![alt text](image-48.png)
+
+
+## DOCKER COMMANDS
+![alt text](image-49.png)
+![alt text](image-50.png)
 
 
 
