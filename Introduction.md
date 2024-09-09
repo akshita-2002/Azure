@@ -596,7 +596,7 @@ container has hypervisor whereas container is docker
 - docker compose helps to reduce work by deploying images on all containers 
 ![alt text](image-45.png)
 docker compose reads the yml file and creates images 
-- tool to run multi container applications
+- tool to run multi container applications 
 
 
 
