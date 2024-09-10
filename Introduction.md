@@ -613,6 +613,36 @@ Contains all the images and absed on the request docker pulls the image from reg
 ![alt text](image-49.png)
 ![alt text](image-50.png)
 
+## Docker Use Cases
+![alt text](image-51.png)
+
+
+![alt text](image-52.png)
+- arm shares resources across different networks in kubernetes cluster
+![alt text](image-53.png)
+- node pool => if single OS is deployed across multiple nodes
+
+- BAtch Account : same arm for multiple resources
+
+- private endpoint : to deploy
+
+- Empty Dir volume creates 
+
+# CYCLE OF DEVOPS
+![alt text](image-54.png)
+
+
+- Infrastructure as a code : infrastructure components such as servers, networks and storage are provisioned and managed using code and automation tools, rather than manual process.
+
+
+### IAM
+![alt text](image-55.png)
+- managment group handles who should access what 
+- mangment group allocates subscription to employess depending on use 
+
+# CAPSTONE 
+
+- agenda must be done using azure devops boards to show tasks
 
 
 
