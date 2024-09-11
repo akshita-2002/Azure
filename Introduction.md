@@ -640,9 +640,29 @@ Contains all the images and absed on the request docker pulls the image from reg
 - managment group handles who should access what 
 - mangment group allocates subscription to employess depending on use 
 
+
+
+# ArgoCD
+![alt text](image-57.png)
+- kuberneted cannot directly connect with git
+- hence argoCD is used
+- sync code changes from git to kubernetes
+- not a product of microsoft
+- tool
+- need to purchase from marketplace , with name bitnami package for argo CD 
+- similar to taskboard, uses diff branches to integrate the code
+![alt text](image-58.png)
+
+https://argo-cd.readthedocs.io/en/stable/?_gl=1*1ndvo00*_ga*MTQ4MjcwNDg3Ny4xNzI2MDM2MTQ0*_ga_5Z1VTPDL73*MTcyNjAzNjE0NC4xLjEuMTcyNjAzNjE2NS4wLjAuMA..
+
+
+![alt text](image-59.png)
+
 # CAPSTONE 
 
 - agenda must be done using azure devops boards to show tasks
+
+![alt text](image-56.png)
 
 
 
