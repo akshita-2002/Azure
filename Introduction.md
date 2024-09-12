@@ -54,6 +54,13 @@
 
 
 
+![alt text](image-61.png)
+
+- basics,disks all these are called blades
+
+
+- Diagnostics logging -> gives exact billing, exists in azure monitor and helps to understand the logs 
+
 ## CHOOSING RIGHT CLOUD MODEL
 
 - Application Complexity -> based on the type of users using the application, turnaround complexity, storage. => Saas is suitable for simpler applications while Paas and Iaas for more complex applications
@@ -80,7 +87,8 @@
 ## SERVICES 
 
 1. Compute - VM,Serverless computing, containers ( execute a application on a serverless machine)
-2. Storage - blobs,files, queues,tables and disks 
+2. Storage - blobs,files, queues,tables and disks
+![alt text](image-62.png) 
 3. Networking - virtual nwtorks , load balancers,vpn gateways for connectivity
 4. Security
 
@@ -657,6 +665,79 @@ https://argo-cd.readthedocs.io/en/stable/?_gl=1*1ndvo00*_ga*MTQ4MjcwNDg3Ny4xNzI2
 
 
 ![alt text](image-59.png)
+
+![alt text](image-60.png)
+- instead of creating aks in azure portal, argo detect changes in repo and deploy automatically. 
+
+- if two people are working on dev branch, if my code is behind argocd detects and integrates the changes in my repos and deploy.
+
+- argocd access source code through images or kubernetes manifests
+
+
+
+## KUBERNETES COMMANDS
+
+1. kubectl create namespace name => to create namespace
+2. kubectl apply -f https://k8s.io/examples/controllers/nginx-deployment.yaml -n namespacename => to deplpoy the namesapce
+3.  kubectl get pods -n akshita1 => to get the replica pods in a namespace
+4.  kubectl delete namespace test => to delete namespace
+5.  kubectl delete namespace test1 test2 => to delete multiple namspace separate by space 
+6.  kubectl top pod --namespace=akshita1 => only works if aks is used 
+
+- only kubeadm can create worker nodes
+
+- docker swarm is collection of docker instances
+
+![alt text](image-64.png)
+- navigates the user to login page when port is 8080 and to profile when th eport is 8090 
+
+
+
+
+# EVENT GRID 
+- event grid => MQTT (Messaging queue) 
+- Azure Event Grid is a fully managed event routing service 
+-  It provides a simple, scalable way to distribute and handle events across different Azure services, applications, or third-party systems. 
+
+
+# LOGIC APP 
+- contains information about resources and workflows
+![alt text](image-63.png)
+- worflows are set of rules for a application
+
+# MFA
+- microsoft works on three ports to enable multifactor authentication.
+Each MFA server must be able to communicate on port 443 outbound to the following addresses:
+https://pfd.phonefactor.net
+https://pfd2.phonefactor.net
+https://css.phonefactor.net
+
+
+- link for mfa
+https://learn.microsoft.com/en-us/entra/identity/authentication/howto-mfaserver-windows 
+
+
+# Application Gateway
+
+- end customer gives the statistics and mangement takes decision to diable or enable certain features 
+
+
+# SERVICE BUS 
+
+- multiple microserves can run
+- to decouple applications and services from each other
+- geo replication -> clone namespace for any other namespace
+- enables relaible communication between applications and services 
+
+
+# Security
+
+- taken care by IAM
+- responsibilties applied to each user 
+
+
+
+
 
 # CAPSTONE 
 
