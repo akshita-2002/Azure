@@ -673,6 +673,11 @@ https://argo-cd.readthedocs.io/en/stable/?_gl=1*1ndvo00*_ga*MTQ4MjcwNDg3Ny4xNzI2
 
 - argocd access source code through images or kubernetes manifests
 
+- bitnami is the option to deploy the services over the cloud in k8 cluster 
+
+- difference between redis and cosmos db => if caching is priority then choose redis, if cost then choose cosmosDB
+ 
+
 
 
 ## KUBERNETES COMMANDS
@@ -683,6 +688,33 @@ https://argo-cd.readthedocs.io/en/stable/?_gl=1*1ndvo00*_ga*MTQ4MjcwNDg3Ny4xNzI2
 4.  kubectl delete namespace test => to delete namespace
 5.  kubectl delete namespace test1 test2 => to delete multiple namspace separate by space 
 6.  kubectl top pod --namespace=akshita1 => only works if aks is used 
+7. sudo apt-get update => to update the docker environmnet
+8. sudo apt-get install apt-transport-https ca-certificates  => to add certificates to docker to ensure security of docker instances
+9. gpg key is for securing source code
+
+
+10. curl -L https://github.com/coreos/etcd/releases/download/v2.0.0/etcd-v2.0.0-linux-amd64.tar.gz -o etcd-v2.0.0-linux-amd64.tar.gz => to download etcd
+
+11. tar xzvf etcd-v2.0.0-linux-amd64.tar.gz => untar the package
+
+12. cd etcd-v2.0.0-linux-amd64
+ 
+13. mkdir /opt/bin
+ 
+14. cp etcd* /opt/bin
+
+
+15. ETCD_OPTS = "-listen-client-urls = http://kube-master:4001" => to create api server
+
+
+ 
+We need to install Kubernetes on all the machines on the cluster so we will execute the steps
+
+15. git clone https://github.com/GoogleCloudPlatform/kubernetes.git
+
+16. cd kubernetes
+
+17. make release 
 
 - only kubeadm can create worker nodes
 
@@ -736,14 +768,30 @@ https://learn.microsoft.com/en-us/entra/identity/authentication/howto-mfaserver-
 - responsibilties applied to each user 
 
 
+# ACCESS CONTROL LISTS 
+- taken care by azure
+- access, contol to services , resources
+- roles are assigned to users based on which they can access or be restricted from using resources and services
+
+
+# SCALING PLANS 
+![alt text](image-65.png)
+- we can add scheduler 
+
+# DISK ENCRYPTION SETS
+![alt text](image-66.png)
+- customer managed key is completely managed by customer
+- double encryption is 50-50 
+- confidential is completely managed by azure 
+
+# DOCKER AREA AND BIND MOUNT
+- to handle docker we may need many docker images , docker area
+- docker volume is two types file system and 
+
+![alt text](image-67.png)
 
 
 
-# CAPSTONE 
-
-- agenda must be done using azure devops boards to show tasks
-
-![alt text](image-56.png)
 
 
 
